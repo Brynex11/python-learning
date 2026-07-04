@@ -1,6 +1,5 @@
 name = "Brynex"
 age = 18
-age = 18
 currency_strength = 93.72
 are_you_drunk = False 
 are_you_not_drunk = True
