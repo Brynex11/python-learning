@@ -43,3 +43,21 @@ print("Fibonacci of 6:", fibonacci(6))
 # - Recursion is often more readable for problems that are
 #   naturally defined in terms of themselves (factorial, tree traversal, etc.)
 # factorial() could also be written using a simple for loop instead.
+
+# SIGNIFICANCE OF RECURSION:
+# For simple cases like factorial, a loop is actually faster and uses less memory.
+# So why use recursion at all?
+#
+# Recursion shines when a problem has a branching or nested structure,
+# where you don't know how "deep" it goes in advance -- e.g. exploring
+# folders inside folders, family trees, HTML/DOM structure, parsing code,
+# or searching/sorting algorithms (like merge sort and quicksort).
+#
+# These problems are naturally defined "in terms of themselves,"
+# so recursion mirrors their structure directly, making the code
+# shorter and easier to trust as correct -- even if a loop-based
+# version technically exists.
+#
+# Rule of thumb:
+# - Flat, linear repetition (known number of steps) -> use a loop
+# - Nested/branching/unknown-depth problems         -> recursion fits better
