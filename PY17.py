@@ -49,10 +49,10 @@ cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
 cities3 = cities. intersection(cities2)
 print(cities3)
 
-cities = ("Tokyo", "Madrid", "Berlin", "Delht")
+cities = {"Tokyo", "Madrid", "Berlin", "Delht"}
 cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
-cities.Intersection_update(cities2) 
-print(cities)
+cities3 = cities.intersection_update(cities2) 
+print(cities3)
 
 # III. symmetric_difference and symmetric_difference_update():
 # The symmetric_difference() and symmetric_difference_update() methods prints only items that are not similar to both the sets.
@@ -128,4 +128,34 @@ print(cities)
 
 cities = {"Tokyo", "Madrid", "Berlis", "Dell"}
 print(cities)
-cities.remove(seoul)
+cities.remove("Tokyo")
+
+# pop():
+# This method removes the last item of the set but the catch is that we don't know which item gets popped as sets are unordered.
+# However, you can access the popped item if you assign the pop method to a variable
+
+cities = {"Tokyo", "Madrid", "Berlin","Delhi"}
+item = cities.pop()
+print(cities)
+print(item)
+
+# del:
+# del is not a method, rather it is a keyword which deletes the set entirely.
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+del cities
+# print(cities),  if you will print this it'll show an error because it's deleted
+
+# clear():
+# This method clears all items in the set and prints an empty set.
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.clear()
+print(cities)
+
+# Check if item exists
+# You can also check if an item exists in the set or not.
+
+info = {"Carla", 19, False, 5.9}
+if "Carla" in info:
+    print("Carla is present.")
+else:
+    print("Carla is absent.")
