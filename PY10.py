@@ -72,6 +72,17 @@ while True:          # Start an endless loop
     if x <= 0:       # Check the condition
         break        # Stop if condition is met
 
+print("example 3:")
+
+while True:
+    age = int(input("Enter your age: "))
+    
+    if age > 0:
+        print(f"Thanks Brynex, your age {age} is valid!")
+        break
+    else:
+        print("Invalid age, try again.")
+
 # this programm will first print "Hello!" and then ask the user to enter a number.
 # If the user enters a number less than or equal to 0, the loop will break and the program will end.
 # Otherwise, if you enter any number greater than 0, then it will continue to print "Hello!" and ask for a number again.

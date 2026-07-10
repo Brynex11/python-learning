@@ -48,3 +48,28 @@ print(f"My name is {name} and I am {age} years old.")
 a = 5
 b = 3
 print(f"{a} + {b} = {a + b}")
+
+#example:
+
+name = "Brynex"
+age = 19
+gpa = 8.7
+
+# Basic f-string
+print(f"Hi, I'm {name} and I'm {age} years old.")
+
+# You can do expressions/calculations inline
+print(f"Next year I'll be {age + 1}.")
+
+# Formatting numbers (great for grades, money, etc.)
+print(f"My GPA is {gpa:.1f}")  # rounds to 1 decimal place
+
+# Calling functions inline
+print(f"My name in caps: {name.upper()}")
+
+# Multi-line f-string with a dict
+student = {"name": "Brynex", "branch": "CSE"}
+print(f"""
+Name: {student['name']}
+Branch: {student['branch']}
+""")
